@@ -1,0 +1,68 @@
+### GetAll 
+GET http://localhost:3000/books
+# GET http://localhost:3000/books?authorSlug=authur-2
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3NTA3MzQsImV4cCI6MTc0MjUyNjczNH0.PSJsz4g_dJgDZL8ttAzcCfYf81jWMYUfWrxM_13wPmA
+
+
+
+### search books by author
+# GET http://localhost:3000/books/searchAuthor?author=1
+GET http://localhost:3000/books/searchAuthor?author=authur 1
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3NTA3MzQsImV4cCI6MTc0MjUyNjczNH0.PSJsz4g_dJgDZL8ttAzcCfYf81jWMYUfWrxM_13wPmA
+
+
+### search books by title
+# GET http://localhost:3000/books/searchTitle?title=title
+GET http://localhost:3000/books/searchTitle?title=book 1
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3NTA3MzQsImV4cCI6MTc0MjUyNjczNH0.PSJsz4g_dJgDZL8ttAzcCfYf81jWMYUfWrxM_13wPmA
+
+
+### search books by ISBN
+# GET http://localhost:3000/books
+GET http://localhost:3000/books/searchIsbn?isbn=1
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3NTA3MzQsImV4cCI6MTc0MjUyNjczNH0.PSJsz4g_dJgDZL8ttAzcCfYf81jWMYUfWrxM_13wPmA
+
+
+
+
+### GetOne 
+GET http://localhost:3000/books/6766325825c90df07e245f9e
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzM4MjMsImV4cCI6MTc0MjUwOTgyM30.IkWxdwdAfhhH19gVA_RxgJnAGq2iVEt8yiaa9HPU4hU
+
+
+
+
+### CreateOne
+POST  http://localhost:3000/books
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3NTA3MzQsImV4cCI6MTc0MjUyNjczNH0.PSJsz4g_dJgDZL8ttAzcCfYf81jWMYUfWrxM_13wPmA
+
+{
+    
+    "ISBN": "155",
+    "author": "authur 2",
+    "title": "book 8",
+    "price": 1490,
+    "description": " The Description of the Book 7 ",
+    "createdby":"6766317c1a824151c7afbdce"
+}
+
+
+
+
+### UpdateOne
+PUT http://localhost:3000/books/676632f225c90df07e245fba
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k
+
+{
+        "price":"2300"
+}
+
+
+
+### DeleteONE 
+DELETE  http://localhost:3000/books/delete?id=676635e69b1d52e525aa9c96
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k

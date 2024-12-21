@@ -1,0 +1,37 @@
+
+### ADD Review 
+POST  http://localhost:3000/books/6766325825c90df07e245f9e/review
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k
+
+{
+    "review":" 12345 Good ",
+    "by":"6765bcaf2e77ca43f8d3d0c3"
+}
+
+
+
+### DELETE specific  Review 
+DELETE  http://localhost:3000/books/6766325825c90df07e245f9e/review/67665e76e4a43175b236c698
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k
+
+
+
+### modify specific  Review 
+PUT  http://localhost:3000/books/6766325825c90df07e245f9e/review/676658e0d918c3f27f7b3160
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k
+
+{
+    "review":"Wonderful XXXXX  "
+}
+
+
+
+
+### GET ALL specific  Book Reviews 
+GET  http://localhost:3000/books/6766325825c90df07e245f9e/review
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1YmNhZjJlNzdjYTQzZjhkM2QwYzMiLCJpYXQiOjE3MzQ3MzQ1MjIsImV4cCI6MTc0MjUxMDUyMn0.JsS6vva8tobitCE7Hz6Vj5Ob_rhU1nuCmyawRinaT7k
+

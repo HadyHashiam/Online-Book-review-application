@@ -1,0 +1,39 @@
+### Signup
+POST  http://localhost:3000/signup
+Content-Type: application/json
+Authorization:  Bearer 
+
+{
+    "name":"hady"  ,
+    "email":"hadyhashim17@gmail.com",
+    "password": "123456789" ,
+    "passwordConfirm" : "123456789"
+}
+
+
+
+### Login
+POST  http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email":"hadyhashim17@gmail.com",
+    "password": "123456789" 
+
+}
+
+
+### GetAll 
+GET http://localhost:3000/users
+
+
+### GetOne 
+GET http://localhost:3000/users/2
+Content-Type: application/json
+
+
+
+
+### DeleteONE 
+DELETE  http://localhost:3000/api/users/1
+Content-Type: application/json
